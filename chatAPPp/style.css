@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.app{
+    width: 500px;
+    background-color: rgba(0,0,0,0.7);
+    height: 95vh;
+    position: relative;
+}
+
+.app .header{
+    background-color: rgb(31, 29, 29);
+    padding: 20px 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    color: #eeeeee;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.app .header .profile--picture{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: bisque;
+} 
+
+.app .header .profile h1.profile--name{
+    font-size: 1.5rem;
+}
+
+.app ul{
+    height: 80vh;
+    overflow-y: scroll;
+}
+
+.app ul::-webkit-scrollbar{
+    display: none;
+}
+
+.app ul li{
+    padding: 10px;
+    margin: 10px;
+    background-color: bisque;
+    width: fit-content;
+    max-width: 350px;
+}
+
+.app ul li:nth-child(odd) {
+    margin-left: auto;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgb(2, 59, 2);
+    color: white;
+}
+
+.app ul li:nth-child(even) {
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgb(16, 16, 16);
+    color: white;
+    
+}
+
+.app form{
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+}
+
+.app form input[type="text"]{
+    width: 80%;
+    background-color: red;
+    padding: 8px 15px;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 20px;
+}
+
+.app form input[type="submit"]{
+    border-radius: 10px;
+    padding: 10px 20px;
+    border: none;
+    font-size: 1rem;
+}
